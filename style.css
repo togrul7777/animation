@@ -1,0 +1,52 @@
+.anmcontainer {
+    width: 50%;
+    height: 400px;
+    background-color: #d6d2d2;
+    margin: 100px auto;
+    position: relative;
+}
+
+.anmcontainer .anmbox {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    animation-name: anmtn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anmtn {
+
+    0%,
+    100% {
+        top: 30px;
+        background-color: blue;
+        left: 30px;
+    }
+
+    25% {
+        border-radius: none;
+        background-color: red;
+        top: 30px;
+        left: 80%;
+        border-radius: 50%;
+
+    }
+
+    50% {
+        top: 250px;
+        left: 80%;
+        background-color: blueviolet;
+        border-radius: 0;
+    }
+
+    75% {
+
+        top: 250px;
+        left: 30px;
+        border-radius: 50%;
+        background-color: brown;
+    }
+
+}
